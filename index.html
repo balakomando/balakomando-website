@@ -24,13 +24,23 @@
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 300px;
-      opacity: 0.08; /* transparansi logo */
+      opacity: 0.08;
       z-index: -1;
+    }
+
+    /* Logo kecil di pojok kiri atas */
+    .logo-kop {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 100px;
+      z-index: 10;
     }
 
     header {
       text-align: center;
       padding: 20px;
+      background-color: black;
     }
 
     header h1 {
@@ -80,13 +90,14 @@
   </style>
 </head>
 <body>
-  <header style="display: flex; align-items: center; padding: 20px; background-color: black;">
-  <img src="sticker.png" alt="Logo Bala Komando" style="height: 100px; margin-right: 20px;">
-  <div>
-    <h1 style="margin: 0; color: #f90;">BALA' KOMANDO MELAYU</h1>
+
+  <!-- Logo di pojok kiri atas -->
+  <img src="sticker.png" alt="Logo Bala Komando" class="logo-kop">
+
+  <header>
+    <h1>BALA' KOMANDO MELAYU</h1>
     <p class="highlight">Organisasi Sosial Melayu - Pontianak, Kalimantan Barat</p>
-  </div>
-</header>
+  </header>
 
   <nav>
     <a href="#beranda">Beranda</a>
