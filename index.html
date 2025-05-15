@@ -22,53 +22,37 @@
       height: 100%;
       background-image: url('sticker.png');
       background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 400px;
-      opacity: 0.5;
+      background-position: center top;
+      background-size: 300px;
+      opacity: 0.08;
       z-index: -1;
-    }
-
-    .logo-kop {
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      height: 120px;
-      z-index: 10;
     }
 
     header {
       text-align: center;
       padding: 20px;
-      background-color: black;
     }
 
     header h1 {
       margin: 0;
       color: #f90;
-      font-size: 2.5em;
     }
 
-    .alamat-kantor {
-      margin: 5px auto 0 auto;
-      font-size: 0.9em;
-      color: #ccc;
-      max-width: 600px;
-      text-align: center;
+    .highlight {
+      color: #0f0;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       background-color: #222;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      padding: 12px 16px;
+      padding: 14px 20px;
       text-decoration: none;
-      flex-grow: 1;
-      text-align: center;
     }
 
     nav a:hover {
@@ -78,10 +62,10 @@
 
     section {
       padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
       margin: 10px auto;
       max-width: 800px;
       border-radius: 8px;
-      background-color: transparent;
     }
 
     footer {
@@ -89,133 +73,21 @@
       text-align: center;
       padding: 10px;
       margin-top: 20px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-
-    .highlight {
-      color: #0f0;
     }
 
     a {
       color: orange;
     }
 
-    .program-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .program-item {
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease, background-color 0.3s;
-    }
-
-    .program-item:hover {
-      background-color: #222;
-      transform: translateY(-5px);
-    }
-
-    .program-item img {
-      width: 64px;
-      height: 64px;
-      margin-bottom: 15px;
-    }
-
-    .program-item h3 {
-      color: #f90;
-      margin-bottom: 10px;
-      font-size: 1.2em;
-    }
-
-    .program-item p {
-      color: #ccc;
-      font-size: 0.95em;
-    }
-
-    .program-item ul {
-      text-align: left;
-      margin-top: 15px;
-      color: #ccc;
-      font-size: 0.95em;
-      padding-left: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 10px 18px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn-whatsapp {
-      background-color: #25D366;
-      color: white;
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1ebe57;
-    }
-
-    /* RESPONSIF UNTUK LAYAR KECIL */
-    @media (max-width: 600px) {
-      .logo-kop {
-        height: 80px;
-        top: 5px;
-        left: 10px;
-      }
-
-      header h1 {
-        font-size: 1.8em;
-      }
-
-      .alamat-kantor {
-        font-size: 0.8em;
-        padding: 0 10px;
-      }
-
-      nav {
-        flex-direction: column;
-      }
-
-      nav a {
-        padding: 10px;
-        font-size: 1em;
-        border-top: 1px solid #333;
-      }
-
-      section#beranda h1 {
-        font-size: 2em;
-      }
-
-      section#beranda h2 {
-        font-size: 1.5em;
-      }
-
-      section#beranda p {
-        font-size: 1em;
-      }
+    a:hover {
+      color: #fff;
     }
   </style>
 </head>
 <body>
-
-  <img src="sticker.png" alt="Logo Bala Komando" class="logo-kop">
-
   <header>
     <h1>BALA' KOMANDO MELAYU</h1>
-    <p class="alamat-kantor">
-      Jl. Tanjung Pura, Gg. Aden 1, No. A1, Kelurahan Benua Melayu Laut, Kecamatan Pontianak Selatan, Kota Pontianak, Kalimantan Barat. Kode Pos: 78123
-    </p>
+    <p class="highlight">Organisasi Sosial Melayu - Pontianak, Kalimantan Barat</p>
   </header>
 
   <nav>
@@ -226,17 +98,9 @@
     <a href="#kontak">Kontak</a>
   </nav>
 
-  <section id="beranda" style="background: linear-gradient(135deg, #111, #222); padding: 60px 20px; text-align: center; border-radius: 8px;">
-    <h2 style="font-size: 2.5em; color: #f90; margin-bottom: 20px;">Selamat Datang di</h2>
-    <h1 style="font-size: 3em; margin: 0 0 20px; color: white;">BALA' KOMANDO MELAYU</h1>
-    <p style="font-size: 1.2em; color: #ccc; max-width: 700px; margin: auto;">
-      Situs resmi organisasi sosial yang berkomitmen membantu masyarakat Kalimantan Barat, khususnya di Pontianak.
-      Bergabunglah bersama kami dalam misi kemanusiaan dan solidaritas sesama.
-    </p>
-    <br />
-    <a href="#program" style="display: inline-block; margin-top: 30px; padding: 12px 24px; background-color: #f90; color: black; text-decoration: none; border-radius: 5px; font-weight: bold;">
-      Lihat Program Kami
-    </a>
+  <section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p>Selamat datang di situs resmi BALA' KOMANDO MELAYU, organisasi sosial yang berkomitmen membantu masyarakat Kalimantan Barat, khususnya di Pontianak.</p>
   </section>
 
   <section id="tentang">
@@ -245,60 +109,33 @@
   </section>
 
   <section id="program">
-    <h2 style="text-align: center; color: #f90; font-size: 2em;">Program & Kegiatan</h2>
-    <div class="program-grid">
-      <div class="program-item">
-        <img src="https://img.icons8.com/fluency/64/ambulance.png" alt="Ambulans Gratis" />
-        <h3>Ambulans Gratis</h3>
-        <p>Layanan Ambulans tanpa biaya untuk masyarakat Pontianak dan Sekitarnya, siaga 24 jam setiap hari.</p>
-        <ul>
-          <li><strong>Jangkauan:</strong> Pontianak & Sekitarnya</li>
-          <li><strong>Siaga:</strong> 24 Jam</li>
-          <li><strong>Prioritas:</strong> Masyarakat kurang mampu</li>
-          <li><strong>Hubungi:</strong> <a href="tel:+628125712739" style="color: #f90;">+62 812 5712 739</a></li>
-          <li><strong>Ingin Berdonasi:</strong> Transfer ke Rekening BCA 123-456-789 a.n. Bala' Komando Melayu</li>
-        </ul>
-        <a href="https://wa.me/628125712739" target="_blank" class="btn btn-whatsapp">WHATSAPP</a>
-      </div>
-
-      <div class="program-item">
-        <img src="https://img.icons8.com/color/64/fire-truck.png" alt="Pemadam Kebakaran Gratis" />
-        <h3>Pemadam Kebakaran</h3>
-        <p>Pemadam Kebakaran siap membantu masyarakat secara gratis dalam keadaan darurat kebakaran di wilayah Pontianak.</p>
-        <ul>
-          <li><strong>Jangkauan:</strong> Pontianak & Sekitarnya</li>
-          <li><strong>Siaga:</strong> 24 Jam</li>
-          <li><strong>Hubungi:</strong> <a href="tel:+628123456789" style="color: #f90;">+62 812 3456 789</a></li>
-          <li><strong>Info Darurat:</strong> Melayani panggilan kebakaran dan evakuasi darurat</li>
-        </ul>
-        <a href="https://wa.me/628123456789" target="_blank" class="btn btn-whatsapp">WHATSAPP</a>
-      </div>
-
-      <div class="program-item">
-        <img src="https://img.icons8.com/fluency/64/charity.png" alt="Bakti Sosial" />
-        <h3>Bakti Sosial</h3>
-        <p>Bantuan kemanusiaan seperti distribusi sembako, bantuan bencana, dan kegiatan sosial lainnya.</p>
-      </div>
-    </div>
+    <h2>Program & Kegiatan</h2>
+    <ul>
+      <li>Ambulance Gratis Untuk Masyarakat</li>
+      <li>Pemadam Kebakarans</li>
+      <li>Bakti sosial dan Bantuan Bencana</li>
+    </ul>
   </section>
 
   <section id="galeri">
     <h2>Galeri</h2>
     <p>Foto-foto kegiatan sosial kami dan dokumentasi pelayanan kepada masyarakat.</p>
-    <!-- Bisa ditambahkan slider atau galeri foto di sini -->
+    <!-- Galeri foto/video dapat ditambahkan di sini -->
   </section>
 
   <section id="kontak">
-    <h2>Kontak Kami</h2>
+    <h2>Kontak</h2>
     <p>Alamat: Jl. Tanjung Pura, Gg. Aden 1, No. A1, Pontianak Selatan, Kota Pontianak, Kalimantan Barat, 78123</p>
-    <p>Telepon Ambulans: <a href="tel:+628125712739" style="color: #f90;">+62 812 5712 739</a></p>
-    <p>Telepon Damkar: <a href="tel:+628123456789" style="color: #f90;">+62 812 3456 789</a></p>
-    <p>Email: <a href="mailto:info@balakomandomelayu.org" style="color: #f90;">info@balakomandomelayu.org</a></p>
+    <p>Telepon Ambulans: <a href="tel:+628125712739">+62 812 5712 739</a></p>
+    <p>Telepon Damkar: <a href="tel:+628123456789">+62 812 3456 789</a></p>
+    <p>Email: <a href="mailto:markasbesar.balakomando@gmail.com">markasbesar.balakomando@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/mabes.balakomando" target="_blank">@mabes.balakomando</a></p>
+    <p>Facebook: <a href="https://facebook.com/markas.besar/" target="_blank">Markas Besar Bala' Komando Melayu</a></p>
+    <p>WhatsApp: (akan ditambahkan manual)</p>
   </section>
 
   <footer>
-    &copy; 2025 BALA' KOMANDO MELAYU. Semua hak cipta dilindungi.
+    <p>&copy; 2025 BALA' KOMANDO MELAYU. Semua hak cipta dilindungi.</p>
   </footer>
-
 </body>
 </html>
