@@ -165,6 +165,49 @@
       color: black;
     }
 
+    form {
+      max-width: 500px;
+      margin: 20px auto 0 auto;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #f90;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #555;
+      background-color: #222;
+      color: white;
+      font-size: 1em;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #f90;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ffa500;
+    }
+
     /* RESPONSIF UNTUK LAYAR KECIL */
     @media (max-width: 600px) {
       .logo-kop {
@@ -220,9 +263,11 @@
   <nav>
     <a href="#beranda">Beranda</a>
     <a href="#tentang">Tentang Kami</a>
+    <a href="#berita">Berita</a>
     <a href="#program">Program</a>
     <a href="#galeri">Galeri</a>
     <a href="#kontak">Kontak</a>
+    <a href="#bergabung">Bergabung</a>
   </nav>
 
   <section id="beranda" style="background: linear-gradient(135deg, #111, #222); padding: 60px 20px; text-align: center; border-radius: 8px;">
@@ -241,6 +286,11 @@
   <section id="tentang">
     <h2>Tentang Kami</h2>
     <p>BALA' KOMANDO MELAYU adalah organisasi Melayu yang berdiri dan bergerak di Kalimantan Barat, tepatnya di Kota Pontianak. Kami aktif membantu masyarakat melalui berbagai kegiatan sosial, seperti penyediaan layanan Ambulans dan Damkar gratis tanpa biaya.</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita</h2>
+    <p>(Konten berita akan ditambahkan di sini)</p>
   </section>
 
   <section id="program">
@@ -328,8 +378,28 @@
     <p>WhatsApp: (akan ditambahkan manual)</p>
   </section>
 
+  <section id="bergabung">
+    <h2>Bergabung</h2>
+    <p>Ingin bergabung bersama kami? Silakan isi form pendaftaran berikut ini:</p>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telepon">No. Telepon:</label>
+      <input type="text" id="telepon" name="telepon" required>
+
+      <label for="alasan">Alasan Bergabung:</label>
+      <textarea id="alasan" name="alasan" rows="4" placeholder="Ceritakan sedikit alasan Anda ingin bergabung..." required></textarea>
+
+      <input type="submit" value="Kirim Pendaftaran">
+    </form>
+  </section>
+
   <footer>
-    <p>&copy; 2025 BALA' KOMANDO MELAYU</p>
+    &copy; 2025 BALA' KOMANDO MELAYU. Semua Hak Cipta Dilindungi.
   </footer>
 
 </body>
